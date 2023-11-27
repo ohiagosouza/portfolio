@@ -12593,6 +12593,18 @@ body {
   background: #00031d;
 }
 
+.btn {
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid #ff9535;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #00031d;
+  border: 1px solid #ff9535;
+}
+
 .navbar {
   background: rgba(0, 4, 46, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -12621,12 +12633,6 @@ body {
 .home .know-me {
   font-family: "Roboto thin", sans-serif;
   font-size: 20px;
-}
-.home .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
 }
 
 .skills,
@@ -12668,6 +12674,27 @@ body {
 
 .courses {
   width: 500px;
+}
+
+.contact-form {
+  width: 35%;
+  height: 80%;
+  color: #323232;
+}
+.contact-form #floatingMessage {
+  height: 190px;
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+}
+.footer p {
+  margin: 1rem 0px 0px 0px;
+  color: #ffffff;
+}
+.footer p a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
