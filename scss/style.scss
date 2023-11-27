@@ -1,0 +1,63 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./variables.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  height: 95dvh;
+}
+
+.navbar {
+  background-color: $first-bg-color;
+  height: 80px;
+  .nav-link {
+    color: $white-text;
+  }
+  .nav-link.active {
+    color: $primary-color !important;
+  }
+}
+
+.home {
+  background-color: $second-bg-color;
+  color: $white-text;
+
+  .profile_image {
+    height: 200px;
+  }
+
+  .job-title {
+    color: $primary-color;
+  }
+
+  .know-me {
+    font-family: "Roboto thin", sans-serif;
+    font-size: 20px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+.skills,
+.education,
+.projects,
+.contact {
+  background-color: $third-bg-color;
+  color: $white-text;
+}
+
+.card {
+  background-color: $second-bg-color;
+  color: $white-text;
+}
+
+.courses {
+  width: 500px;
+}
