@@ -12589,8 +12589,16 @@ textarea.form-control-lg {
   height: 95dvh;
 }
 
+body {
+  background: #00031d;
+}
+
 .navbar {
-  background-color: #00042d;
+  background: rgba(0, 4, 46, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   height: 80px;
 }
 .navbar .nav-link {
@@ -12627,6 +12635,30 @@ textarea.form-control-lg {
 .contact {
   background-color: #323232;
   color: #ffffff;
+}
+.skills .skills-title,
+.skills .education-title,
+.skills .project-title,
+.skills .contact-title,
+.education .skills-title,
+.education .education-title,
+.education .project-title,
+.education .contact-title,
+.projects .skills-title,
+.projects .education-title,
+.projects .project-title,
+.projects .contact-title,
+.contact .skills-title,
+.contact .education-title,
+.contact .project-title,
+.contact .contact-title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.section-title {
+  width: 14%;
+  border-bottom: 3px solid #ff9535;
 }
 
 .card {

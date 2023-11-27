@@ -8,9 +8,15 @@
 .container {
   height: 95dvh;
 }
-
+body {
+  background: $second-bg-color;
+}
 .navbar {
-  background-color: $first-bg-color;
+  background: rgb(0, 4, 46, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   height: 80px;
   .nav-link {
     color: $white-text;
@@ -51,6 +57,19 @@
 .contact {
   background-color: $third-bg-color;
   color: $white-text;
+
+  .skills-title,
+  .education-title,
+  .project-title,
+  .contact-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+.section-title {
+  width: 14%;
+  border-bottom: 3px solid $primary-color;
 }
 
 .card {
