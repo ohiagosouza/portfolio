@@ -12589,8 +12589,28 @@ textarea.form-control-lg {
   height: 95dvh;
 }
 
+body {
+  background: #00031d;
+}
+
+.btn {
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid #ff9535;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #00031d;
+  border: 1px solid #ff9535;
+}
+
 .navbar {
-  background-color: #00042d;
+  background: rgba(0, 4, 46, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   height: 80px;
 }
 .navbar .nav-link {
@@ -12614,12 +12634,6 @@ textarea.form-control-lg {
   font-family: "Roboto thin", sans-serif;
   font-size: 20px;
 }
-.home .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
 
 .skills,
 .education,
@@ -12627,6 +12641,30 @@ textarea.form-control-lg {
 .contact {
   background-color: #323232;
   color: #ffffff;
+}
+.skills .skills-title,
+.skills .education-title,
+.skills .project-title,
+.skills .contact-title,
+.education .skills-title,
+.education .education-title,
+.education .project-title,
+.education .contact-title,
+.projects .skills-title,
+.projects .education-title,
+.projects .project-title,
+.projects .contact-title,
+.contact .skills-title,
+.contact .education-title,
+.contact .project-title,
+.contact .contact-title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.section-title {
+  width: 14%;
+  border-bottom: 3px solid #ff9535;
 }
 
 .card {
@@ -12636,6 +12674,27 @@ textarea.form-control-lg {
 
 .courses {
   width: 500px;
+}
+
+.contact-form {
+  width: 35%;
+  height: 80%;
+  color: #323232;
+}
+.contact-form #floatingMessage {
+  height: 190px;
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+}
+.footer p {
+  margin: 1rem 0px 0px 0px;
+  color: #ffffff;
+}
+.footer p a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
