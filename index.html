@@ -49,13 +49,13 @@
       </div>
     </nav>
     <div class="container-fluid z-0 position-relative home justify-content-center rounded-bottom-5 pb-5" id="home">
-      <div class="container w-50 pt-5">
+      <div class="container section-height w-50 pt-5">
         <div class="d-flex row justify-content-center text-center">
           <div class="pt-5 profile-picture">
             <img class="profile_image rounded-circle" src="./assets/like.png" alt="Profile Picutre" />
           </div>
           <p class="name pt-4 h1">HIAGO SANTANA SOUZA</p>
-          <p class="job-title h2">Engenheiro da Computação & Desenvolvedor Full-Stack</p>
+          <p class="job-title h2" id="job-title"></p>
           <p class="know-me text-start mt-4">
             Apaixonado por tecnologia, estou disposto a contribuir de forma significativa para resolver o seu problema.
             Possuo conhecimento em HTML, CSS, Javascript, Bootstrap e Sass para front-end e estudo Node.js e Java para o
@@ -185,9 +185,8 @@
         <div class="py-5 education-title">
           <p class="h1 section-title">Formação</p>
         </div>
-        <div class="d-flex">
-          <div class="blank-space col-4"></div>
-          <div class="courses col-4">
+        <div class="d-flex g-4 justify-content-evenly">
+          <div>
             <div>
               <p class="h4 mt-5">Bacharel Engenharia da Computação</p>
               <p class="school">2023-2027 | Faculdade Descomplica Digital</p>
@@ -217,7 +216,7 @@
               <h5 class="card-title mt-5">Litoral Solar Aquecedores</h5>
               <p class="card-text"><b>Tecnologias:</b> HTML, Bootstrap, SASS</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-5">
-                <a href="https://litoralsolaraquecedores.com" class="btn btn-primary">Deploy</a>
+                <a href="https://litoralsolaraquecedores.com" target="_blank" class="btn btn-primary">Deploy</a>
               </div>
             </div>
           </div>
@@ -227,8 +226,10 @@
               <h5 class="card-title mt-5">Projeto e-commerce</h5>
               <p class="card-text"><b>Tecnologias:</b> HTML, Javascript, Bootstrap, Sass</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-5">
-                <a href="https://ohiagosouza.github.io/e-commerce/" class="btn btn-primary">Deploy</a>
-                <a href="#" class="btn btn-primary">Github</a>
+                <a href="https://ohiagosouza.github.io/e-commerce/" target="_blank" class="btn btn-primary">Deploy</a>
+                <a href="https://github.com/ohiagosouza/e-commerce.git" target="_blank" class="btn btn-primary"
+                  >Github</a
+                >
               </div>
             </div>
           </div>
@@ -238,8 +239,8 @@
               <h5 class="card-title mt-5">Calculadora</h5>
               <p class="card-text"><b>Tecnologias:</b> HTML, CSS, Javascript</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-5">
-                <a href="https://ohiagosouza.github.io/calcjs/ " class="btn btn-primary">Deploy</a>
-                <a href="#" class="btn btn-primary">Github</a>
+                <a href="https://ohiagosouza.github.io/calcjs/ " target="_blank" class="btn btn-primary">Deploy</a>
+                <a href="https://github.com/ohiagosouza/calcjs.git" target="_blank" class="btn btn-primary">Github</a>
               </div>
             </div>
           </div>
@@ -248,7 +249,7 @@
     </div>
     <!-- Contact -->
     <div class="container-fluid mt-n2 contact" id="contact">
-      <div class="container py-5">
+      <div class="container section-height py-5">
         <div class="contact-title">
           <p class="h1 section-title">Entre em contato</p>
         </div>
