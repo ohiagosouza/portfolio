@@ -1,0 +1,78 @@
+@include media-breakpoint-down(md) {
+  .container {
+    width: auto !important;
+  }
+
+  .navbar-nav {
+    background-color: $second-bg-color;
+  }
+
+  .btn {
+    width: auto !important;
+    font-size: 18px !important;
+  }
+
+  .btn-contact {
+    margin-top: 2.5rem !important;
+  }
+
+  .section-height {
+    height: auto !important;
+    padding: 2px !important;
+
+    .job-title {
+      font-size: 1.2rem !important;
+    }
+
+    .know-me {
+      font-size: 0.85rem !important;
+    }
+  }
+
+  .section-title {
+    width: 50% !important;
+  }
+
+  .social {
+    width: auto !important;
+    gap: 1.5rem !important;
+  }
+
+  .skills,
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .card {
+      height: 100% !important;
+      width: 100% !important;
+      padding: 1rem !important;
+    }
+  }
+
+  .contact-form {
+    width: 100% !important;
+    .btn {
+      margin: 2.2rem;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+
+    .footer a {
+      margin-top: 2rem;
+      margin-bottom: 10px;
+    }
+    .logo {
+      order: 2;
+    }
+
+    .social {
+      order: 3;
+    }
+  }
+}
