@@ -6,7 +6,7 @@
   padding: 0px;
 }
 
-.container {
+.section-height {
   height: 95dvh;
 }
 
@@ -50,6 +50,7 @@ body {
 
   .job-title {
     color: $primary-color;
+    animation: typing 500ms;
   }
 
   .know-me {

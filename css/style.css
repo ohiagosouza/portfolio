@@ -12585,7 +12585,7 @@ textarea.form-control-lg {
   padding: 0px;
 }
 
-.container {
+.section-height {
   height: 95dvh;
 }
 
@@ -12629,6 +12629,7 @@ body {
 }
 .home .job-title {
   color: #ff9535;
+  animation: typing 500ms;
 }
 .home .know-me {
   font-family: "Roboto thin", sans-serif;
