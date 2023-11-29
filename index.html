@@ -24,84 +24,30 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg rounded-bottom-5">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top rounded-bottom-5">
+      <div class="container">
         <a class="navbar-brand" href="#home">
           <img src="./assets/Logo_Hiago.svg" alt="Profile Picture" width="60px" />
         </a>
-
         <button
-          class="btn btn-primary d-lg-none"
+          class="btn navbar-toggler bg-light"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasResponsive"
-          aria-controls="offcanvasResponsive"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          ///
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasResponsive"
-          aria-labelledby="offcanvasResponsiveLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Hiago Souza</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasResponsive"
-              aria-label="Close"
-              id="btn-close"
-            ></button>
-          </div>
-          <div class="offcanvas-body text-center gap-5 d-flex justify-content-center">
-            <div class="navbar-nav list-group" id="nav-bar-list" role="navigation">
-              <a
-                type="button"
-                class="nav-link"
-                data-bs-toggle="navigation"
-                data-bs-dismiss="offcanvasResponsive"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-              <a
-                type="button"
-                class="nav-link"
-                data-bs-toggle="navigation"
-                data-bs-dismiss="offcanvasResponsive"
-                href="#skills"
-                >Habilidades</a
-              >
-              <a
-                type="button"
-                class="nav-link"
-                data-bs-toggle="navigation"
-                data-bs-dismiss="offcanvasResponsive"
-                href="#education"
-                >Formação</a
-              >
-              <a
-                type="button"
-                class="nav-link"
-                data-bs-toggle="navigation"
-                data-bs-dismiss="offcanvasResponsive"
-                href="#projects"
-                >Projetos</a
-              >
-              <a
-                type="button"
-                class="nav-link"
-                data-bs-toggle="navigation"
-                data-bs-dismiss="offcanvasResponsive"
-                href="#contact"
-                >Contato</a
-              >
-            </div>
-          </div>
+        <div class="text-center collapse navbar-collapse justify-content-evenly" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Formação</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -154,6 +100,9 @@
             </a>
             <a href="https://instagram.com/hiago.dev" target="_blank">
               <img width="40px" src="./assets/instagram_icon.png" alt="Instagram"
+            /></a>
+            <a href="https://wa.me/+5513996866177?text=Olá, Gostaria de falar sobre um projeto." target="_blank"
+              ><img width="40px" src="./assets/whatsapp-icon.png" alt="WhatsApp"
             /></a>
           </div>
           <div class="buttons mt-5">
@@ -317,21 +266,43 @@
           <p class="h1 section-title">Entre em contato</p>
         </div>
         <div class="input-group d-flex justify-content-center">
-          <form class="contact-form" action="" method="post">
+          <form class="contact-form" action="https://formspree.io/f/xayggpkq" method="post">
+            >
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingName" placeholder="Nome completo" width="500px" />
+              <input
+                type="text"
+                name="Name"
+                class="form-control"
+                id="floatingName"
+                placeholder="Nome completo"
+                width="500px"
+                required
+              />
               <label for="floatingName">Nome</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingEmail" placeholder="Seu melhor e-mail" />
+              <input
+                type="email"
+                name="Email"
+                class="form-control"
+                id="floatingEmail"
+                placeholder="Seu melhor e-mail"
+                required
+              />
               <label for="floatingEmail">E-mail</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="tel" class="form-control" id="floatingWhatsApp" placeholder="WhatsApp" />
+              <input type="tel" name="WhatsApp" class="form-control" id="floatingWhatsApp" placeholder="WhatsApp" />
               <label for="floatingWhatsApp">WhatsApp</label>
             </div>
             <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Send your message" id="floatingMessage"></textarea>
+              <textarea
+                class="form-control"
+                name="Message"
+                placeholder="Send your message"
+                id="floatingMessage"
+                required
+              ></textarea>
               <label for="floatingMessage">Mensagem</label>
             </div>
             <div class="submit-button d-grid gap-2 d-md-flex justify-content-md-end">
@@ -384,6 +355,9 @@
         </a>
         <a href="https://instagram.com/hiago.dev" target="_blank">
           <img width="30px" src="./assets/instagram_icon.png" alt="Instagram"
+        /></a>
+        <a href="https://wa.me/+5513996866177?text=Olá, Gostaria de falar sobre um projeto." target="_blank"
+          ><img width="30px" src="./assets/whatsapp-icon.png" alt="WhatsApp"
         /></a>
       </div>
     </footer>
