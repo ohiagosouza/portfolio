@@ -12584,9 +12584,6 @@ textarea.form-control-lg {
   .container {
     width: auto !important;
   }
-  .navbar-nav {
-    background-color: #00031d;
-  }
   .btn {
     width: auto !important;
     font-size: 18px !important;
@@ -12665,13 +12662,23 @@ body {
   border: 1px solid #ff9535;
 }
 
+.btn-close {
+  background-color: #ffffff;
+}
+
 .navbar {
   background: rgba(0, 4, 46, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 80px;
+}
+.navbar .offcanvas {
+  background: rgba(0, 4, 46, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  color: #ffffff;
 }
 .navbar .nav-link {
   color: #ffffff;
