@@ -3,6 +3,12 @@
     width: auto !important;
   }
 
+  .navbar-nav {
+    margin-top: 25%;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+  }
+
   .btn {
     width: auto !important;
     font-size: 18px !important;
@@ -58,6 +64,7 @@
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+    height: auto !important;
 
     .footer a {
       margin-top: 2rem;
