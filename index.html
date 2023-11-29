@@ -31,23 +31,76 @@
         </a>
 
         <button
-          class="navbar-toggler"
+          class="btn btn-primary d-lg-none"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navigation"
-          aria-controls="navigation"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive"
         >
-          <span class="navbar-toggler-icon"></span>
+          ///
         </button>
-        <div class="collapse navbar-collapse justify-content-evenly text-center" id="navigation">
-          <div class="navbar-nav list-group" id="nav-bar-list" role="navigation">
-            <a class="nav-link active" data-bs-toggle="navigation" aria-current="page" href="#">Home</a>
-            <a class="nav-link" data-bs-toggle="navigation" href="#skills">Habilidades</a>
-            <a class="nav-link" data-bs-toggle="navigation" href="#education">Formação</a>
-            <a class="nav-link" data-bs-toggle="navigation" href="#projects">Projetos</a>
-            <a class="nav-link" data-bs-toggle="navigation" href="#contact">Contato</a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Hiago Souza</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasResponsive"
+              aria-label="Close"
+              id="btn-close"
+            ></button>
+          </div>
+          <div class="offcanvas-body text-center gap-5 d-flex justify-content-center">
+            <div class="navbar-nav list-group" id="nav-bar-list" role="navigation">
+              <a
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="navigation"
+                data-bs-dismiss="offcanvasResponsive"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+              <a
+                type="button"
+                class="nav-link"
+                data-bs-toggle="navigation"
+                data-bs-dismiss="offcanvasResponsive"
+                href="#skills"
+                >Habilidades</a
+              >
+              <a
+                type="button"
+                class="nav-link"
+                data-bs-toggle="navigation"
+                data-bs-dismiss="offcanvasResponsive"
+                href="#education"
+                >Formação</a
+              >
+              <a
+                type="button"
+                class="nav-link"
+                data-bs-toggle="navigation"
+                data-bs-dismiss="offcanvasResponsive"
+                href="#projects"
+                >Projetos</a
+              >
+              <a
+                type="button"
+                class="nav-link"
+                data-bs-toggle="navigation"
+                data-bs-dismiss="offcanvasResponsive"
+                href="#contact"
+                >Contato</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -103,9 +156,14 @@
               <img width="40px" src="./assets/instagram_icon.png" alt="Instagram"
             /></a>
           </div>
-          <div class="gap-3 buttons d-flex row justify-content-center text-center mt-5">
-            <button class="btn btn-outline-primary btn-lg w-25">Curriculum</button>
-            <button class="btn btn-outline-primary w-25">Entre em contato</button>
+          <div class="buttons mt-5">
+            <a
+              href="./assets/Curriculum.pdf"
+              class="btn btn-outline-primary btn-lg m-2"
+              download="Currículo - Hiago Santana Souza.pdf"
+              >Curriculum</a
+            >
+            <a class="btn btn-outline-primary btn-lg m-2" href="#contact">Entre em contato</a>
           </div>
         </div>
       </div>
@@ -280,6 +338,7 @@
               <button class="btn btn-lg btn-primary" type="submit">Enviar</button>
             </div>
           </form>
+          <div class="form-floating mb-3 text-center">WhatsApp: (13) 99686-6177</div>
         </div>
       </div>
     </div>
