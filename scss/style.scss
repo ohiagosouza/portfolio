@@ -104,6 +104,15 @@ body {
   #floatingMessage {
     height: 190px;
   }
+
+  .privacy-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .privacy-section > .privacy-policy {
+    color: #fff;
+  }
 }
 
 .footer {
