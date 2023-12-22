@@ -9,3 +9,17 @@ window.onload = function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 };
+
+const buttonSend = document.getElementById("btnSend");
+
+buttonSend.addEventListener("click", event => {
+  event.preventDefault();
+  const privacyChecked = document.getElementById("privacy-policy").checked;
+  const privacyText = document.getElementById("privacy-text");
+
+  if (!privacyChecked) {
+    privacyText.style.color = "#ff0000";
+  } else {
+    document.getElementById("contact-form").submit();
+  }
+});
